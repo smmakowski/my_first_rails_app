@@ -1,5 +1,13 @@
 {
   "name": "my_first_rails_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "mermaid": "^8.4.4"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/smmakowski/my_first_rails_app.git",
+  "author": "Stephen Makowski <makowski.sm@gmail.com>",
+  "license": "MIT"
 }

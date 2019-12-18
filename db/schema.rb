@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_18_030436) do
+ActiveRecord::Schema.define(version: 2019_12_18_195234) do
+
+  create_table "notes", force: :cascade do |t|
+    t.string "note"
+    t.integer "technique_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["technique_id"], name: "index_notes_on_technique_id"
+  end
 
   create_table "positions", force: :cascade do |t|
     t.string "name"

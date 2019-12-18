@@ -1,24 +1,68 @@
-# README
+# Basic Rails App
+This is a simple Application using the Ruby on Rails framework to view, add and edit Brazilian Jujitsu Techniques, using a basic SQLlite3 Database Schema.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Installation
 
-Things you may want to cover:
+## Clone the repository
+```
+git clone git@github.com:smmakowski/my_first_rails_app.git
+cd my_first rails app
+```
 
-* Ruby version
+## Check Ruby and Rails versions
 
-* System dependencies
+### Ruby
 
-* Configuration
+``` bash
+ruby -v
+```
 
-* Database creation
+The output should start with something like `ruby 2.6.5`
 
-* Database initialization
+If not, install the above version using rbenv:
 
-* How to run the test suite
+``` bash
+rbenv install 2.5.1
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Rails
 
-* Deployment instructions
+``` bash
+rails -v
+```
 
-* ...
+The output should start with something like `Rails 5.2.4`
+
+If not, install the above version using:
+
+``` bash
+gem install rails -v 5.2.3
+```
+
+## Install dependencies
+
+Using Bundler
+
+``` bash
+bundle
+```
+
+## Migrate the Database
+
+``` bash
+rails db:migrate
+```
+
+# Running the App Locally
+
+``` bash
+rails server
+```
+
+# Deployment to Production
+
+Push to Heroku production remote
+
+``` bash
+git push heroku
+```

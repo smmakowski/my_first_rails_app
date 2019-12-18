@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'techniques#index'
   resources :techniques
   resources :types
   resources :positions

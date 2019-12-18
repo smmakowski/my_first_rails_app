@@ -1,4 +1,4 @@
 class Technique < ApplicationRecord
-  belongs_to :position
-  belongs_to :type
+  belongs_to :position, :foreign_key => 'position'
+  belongs_to :type, :foreign_key => 'type'
 end

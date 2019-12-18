@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Techniques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Type</th>
+      <th>Top</th>
+      <th>Gi</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @techniques.each do |technique| %>
+      <tr>
+        <td><%= technique.name %></td>
+        <td><%= technique.position %></td>
+        <td><%= technique.type %></td>
+        <td><%= technique.top %></td>
+        <td><%= technique.gi %></td>
+        <td><%= link_to 'Show', technique %></td>
+        <td><%= link_to 'Edit', edit_technique_path(technique) %></td>
+        <td><%= link_to 'Destroy', technique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Technique', new_technique_path %>

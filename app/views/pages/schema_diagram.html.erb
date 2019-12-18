@@ -1,0 +1,23 @@
+<script>mermaid.initialize({startOnLoad:true});</script>
+<div class="jumbotron text-center">
+    <h1>Basic Schema Diagram</h1>
+</div>
+<div class="mermaid container">
+classDiagram
+    class Type
+        Type : +String name
+    class Position
+        Position : +String name
+    class Technique
+        Technique : +String name
+        Technique : +Reference type
+        Technique : +Reference position
+        Technique : +Boolean gi
+        Technique : +Boolean top
+    class Note
+        Note : +String note
+        Note : +Reference technique
+    Position <|-- Technique : Has One
+    Type <|-- Technique : Has One
+    Note <|-- Technique : Has Many
+</div>

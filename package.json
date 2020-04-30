@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mermaid": "^8.4.4"
   },
   "version": "1.0.0",
